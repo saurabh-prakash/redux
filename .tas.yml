@@ -3,14 +3,14 @@ framework: jest
 licenseTier: xsmall
 postMerge:
   pattern:
-    - "./test/utils/*.spec.ts"
+    - "./test/**/*.spec.ts"
     - "./test/*.spec.ts"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 preMerge:
   pattern:
-    - "./test/utils/*.spec.ts"
+    - "./test/**/*.spec.ts"
     - "./test/*.spec.ts"
 preRun:
      command:
