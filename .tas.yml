@@ -4,12 +4,14 @@ licenseTier: xsmall
 postMerge:
   pattern:
     - "./test/**/*.ts"
+    - "./test/*.ts"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 preMerge:
   pattern:
     - "./test/**/*.ts"
+    - "./test/*.ts"
 preRun:
      command:
         - npm install
