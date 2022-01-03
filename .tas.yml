@@ -10,7 +10,7 @@ postMerge:
     type: <commit|time>
 preMerge:
   pattern:
-    - "./test/**/*.spec.tss"
+    - "./test/**/*.spec.ts"
     - "./test/*.spec.ts"
 preRun:
      command:
