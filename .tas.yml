@@ -1,6 +1,6 @@
 ---
 framework: jest
-licenseTier: xsmall
+tier: large
 postMerge:
   pattern:
     - "./test/**/*.spec.ts"
