@@ -3,15 +3,13 @@ framework: jest
 tier: large
 postMerge:
   pattern:
-    - "./test/**/*.spec.ts"
-    - "./test/*.spec.ts"
+    - "./test/utils/warning.spec.js"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 preMerge:
   pattern:
-    - "./test/**/*.spec.ts"
-    - "./test/*.spec.ts"
+    - "./test/utils/warning.spec.js"
 preRun:
      command:
         - npm install
