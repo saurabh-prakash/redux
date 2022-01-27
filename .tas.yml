@@ -2,10 +2,10 @@ framework: jest
 tier: large
 postMerge:
   pattern: 
-    - "./test/utils/warning.spec.js"
+    - "./test/utils/warning.spec.ts"
 preMerge:
   pattern:
-    - "./test/utils/warning.spec.js"
+    - "./test/utils/warning.spec.ts"
 preRun:
      command:
         - npm install
